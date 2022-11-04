@@ -17,6 +17,8 @@ p {
 .header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 2px;
     Padding-bottom: 2px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,15 +28,14 @@ p {
 .header h1 {
     padding: 20px 20px 20px 0;
     width: 200px;
-    background-color: rgb(103, 225, 170);
-    color: rgb(57, 53, 53);
+    background-color: rgb(235, 236, 206);
+    color: rgb(53, 94, 197);
 }
 
 .nav {
     flex-shrink: 1;
-    padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    
 }
 
 .nav ul li {
@@ -44,7 +45,7 @@ p {
 }
 
 .nav a {
-    color: rgb(103, 225, 170);
+    color: rgb(53, 94, 197);
     font-size: 30px;
     text-decoration: underline;
 }
@@ -54,6 +55,7 @@ p {
 .hero {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
@@ -63,7 +65,7 @@ p {
 }
 
 .hero img {
-    position: relative;
+    position: absolute;
     border: solid black;
     width: 200px;
     height: 190px;
@@ -73,51 +75,70 @@ p {
 }
 
 .hero p {
-    flex-shrink: 1;
+    position: absolute;
+    flex-shrink: 1, 0, auto;
     color: white;
     font-weight: bold;
     font-size: 32px;
-    position: relative;
     left: 870px;
     top: 120px;
 }
 
-
 /* Main section: About Me */
 .about-me {
-    display: flex inline;
-    flex-wrap: wrap;
-    color: rgb(53, 94, 197);
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    color: rgb(26, 75, 200);
 }
 
-.about-me h1 {
-    display: inline;
-    padding: 20px 30px 20px 200px;
+#about-me-title {
+    display: flex;
+    justify-content: end;
+    align-items: top;
+    width: 25%;
+    height: 150px;
+    padding: 0 10px 0 100px;
     font-size: 32px;
-    float: left;
+    border-right: solid rgb(26, 75, 200);
+    box-sizing: border-box;
 }
 
-.about-me h1 p{
-    display: inline;
-    border-left: solid rgb(53, 94, 197);
+#about-me-body{
+    display: flex;
+    align-items: top;
+    padding: 0 0 0 30px;
+    width: 75%;
+    height: 150px;
     font-size: 18px;
-    float: right;
 }
 
 /* Main section: Work */
-
 .work {
-    display: flex inline;
-    flex-wrap: wrap;
-    color: rgb(53, 94, 197);
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    color: rgb(26, 75, 200);
 }
 
-.work h1 {
-    display: inline;
-    border-right: solid rgb(53, 94, 197);
-    padding: 20px 20px 20px 200px;
+#work-title {
+    display: flex;
+    justify-content: end;
+    align-items: top;
+    width: 25%;
+    height: 200px;
+    padding: 0 10px 0 100px;
     font-size: 32px;
-    float: left;
+    border-right: solid rgb(26, 75, 200);
+    box-sizing: border-box;
 }
 
 /* Main section: Contact Me*/
@@ -134,4 +155,16 @@ p {
 
 .text-center {
     text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    #about-me #about-me-title{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #about-me #about-me-title{
+        width: 90%;
+    }
 }
