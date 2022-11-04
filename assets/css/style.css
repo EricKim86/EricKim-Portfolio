@@ -5,12 +5,14 @@
 }
 
 body {
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7cd;
 }
 
 p {
     font-size: 18px;
-    color: rgb(53, 94, 197);
+    color: #344e41;
 }
 /* navigation section */
 
@@ -19,17 +21,15 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2px;
-    Padding-bottom: 2px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(57, 53, 53);
+    background-color: #344e41;
 }
 
 .header h1 {
-    padding: 20px 20px 20px 0;
     width: 200px;
-    background-color: rgb(235, 236, 206);
-    color: rgb(53, 94, 197);
+    padding: 0 20px 0 0;
+    background-color: #dad7cd;
+    color: #344e41;
 }
 
 .nav {
@@ -45,7 +45,7 @@ p {
 }
 
 .nav a {
-    color: rgb(53, 94, 197);
+    color: white;
     font-size: 30px;
     text-decoration: underline;
 }
@@ -67,11 +67,13 @@ p {
 .hero img {
     position: absolute;
     border: solid black;
-    width: 200px;
-    height: 190px;
-    top: 4px;
-    left: 6px;
-    bottom: 4px;
+    box-shadow: 10px 10px 5px #040404;
+    border-radius: 8px;
+    width: 150px;
+    height: 140px;
+    top: 25px;
+    left: 8px;
+    bottom: 25px;
 }
 
 .hero p {
@@ -80,7 +82,7 @@ p {
     color: white;
     font-weight: bold;
     font-size: 32px;
-    left: 870px;
+    left: 990px;
     top: 120px;
 }
 
@@ -93,7 +95,7 @@ p {
     padding: 10px 0;
     width: 100%;
     height: auto;
-    color: rgb(26, 75, 200);
+    color: #344e41;
 }
 
 #about-me-title {
@@ -104,7 +106,7 @@ p {
     height: 150px;
     padding: 0 10px 0 100px;
     font-size: 32px;
-    border-right: solid rgb(26, 75, 200);
+    border-right: solid #344e41;
     box-sizing: border-box;
 }
 
@@ -126,7 +128,8 @@ p {
     padding: 10px 0;
     width: 100%;
     height: auto;
-    color: rgb(26, 75, 200);
+    color: #344e41;
+    
 }
 
 #work-title {
@@ -137,8 +140,56 @@ p {
     height: 200px;
     padding: 0 10px 0 100px;
     font-size: 32px;
-    border-right: solid rgb(26, 75, 200);
+    border-right: solid #344e41;
     box-sizing: border-box;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    background: #13293d;
+    color: #fff;
+}
+
+#project-1 {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#project-2 {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#project-3 {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#project-4 {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#project-5 {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
 }
 
 /* Main section: Contact Me*/
@@ -156,6 +207,8 @@ p {
 .text-center {
     text-align: center;
 }
+
+/* media query */
 
 @media screen and (max-width:1200px) {
     #about-me #about-me-title{
