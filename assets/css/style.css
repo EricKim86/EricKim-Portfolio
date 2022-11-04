@@ -78,8 +78,8 @@ p {
 }
 
 .hero p {
-    position: absolute;
-    flex-shrink: 1, 0, auto;
+    position: relative;
+    flex-shrink: 1;
     color: white;
     font-weight: bold;
     font-size: 32px;
@@ -157,75 +157,42 @@ p {
 .work header {
     width: 100%;
     padding: 0 0 0 20px;
-    background-color: black;
+    background-color: #344e41;
     font-size: 21px;
     color: white;
     text-align: left;
 }
 
-#project-1 {
-    flex: 1 0 200px;
+.project {
+    flex: 1 1 200px;
     padding: 10px;
     margin: 10px;
     height: 200px;
     text-align: center;
-    border: solid black;
+    border: solid #344e41;
     border-width: 1px;
-    background-image: url("../images/computer-1.avif");
     background-size: cover;
-    background-position: center;
+    background-position: center; 
+}
+
+#project-1 {
+    background-image: url("../images/computer-1.avif");
 }
 
 #project-2 {
-    flex: 1 0 200px;
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    text-align: center;
-    border: solid black;
-    border-width: 1px;
     background-image: url("../images/computer-2.avif");
-    background-size: cover;
-    background-position: center;
 }
 
 #project-3 {
-    flex: 1 0 200px;
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    text-align: center;
-    border: solid black;
-    border-width: 1px;
     background-image: url("../images/computer-3.avif");
-    background-size: cover;
-    background-position: center;
 }
 
 #project-4 {
-    flex: 1 0 200px;
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    text-align: center;
-    border: solid black;
-    border-width: 1px;
     background-image: url("../images/computer-4.avif");
-    background-size: cover;
-    background-position: center;
 }
 
 #project-5 {
-    flex: 1 0 200px;
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    text-align: center;
-    border: solid black;
-    border-width: 1px;
     background-image: url("../images/computer-5.avif");
-    background-size: cover;
-    background-position: center;
 }
 
 /* Main section: Contact Me*/
@@ -278,13 +245,7 @@ p {
 /* media query */
 
 @media screen and (max-width:768px) {
-    .about-me {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .work {
-        flex-direction: column;
+    .project {
+        width: 100%;
     }
 }
