@@ -155,18 +155,27 @@ p {
     background-image: url("../images/computer-1.avif");
 }
 
-#project-small {
+#project-2 {
     flex: 1 0 35%;
     background-image: url("../images/computer-2.avif");
 }
 
-#project-1:hover {
-    border: solid #f0f5dc;
-    filter: brightness(100%);
-    transition: filter 0.25s ease;
+#project-3 {
+    flex: 1 0 35%;
+    background-image: url("../images/computer-3.avif");
 }
 
-#project-small:hover {
+#project-4 {
+    flex: 1 0 35%;
+    background-image: url("../images/computer-4.avif");
+}
+
+#project-5 {
+    flex: 1 0 35%;
+    background-image: url("../images/computer-5.avif");
+}
+
+.project:hover {
     border: solid #f0f5dc;
     filter: brightness(100%);
     transition: filter 0.25s ease;
@@ -196,8 +205,45 @@ p {
 
 /* media query */
 
-@media screen and (max-width:768px) {
-    .section-body {
+@media screen and (max-width:375px) {
+    .header,
+    .nav,
+    .section-main,
+    .section-title,
+    .section-body,
+    #section-body-contact-me { 
+        flex-direction: column;
+    }
+} 
+@media screen and (max-width:375px) {
+    .header h1 {
         width: 100%;
+        background-color: #dad7cd;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .section-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .section-title {
+        display: flex;
+        width: 100%;
+        margin: 0 0 10px 0;
+        text-align: left;
+        border-bottom: solid #344e41;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .section-body,
+    #section-body-contact-me {
+        width: 100%;
+        margin: 20px 0;
+        border-left: none;
     }
 }
