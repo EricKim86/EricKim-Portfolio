@@ -155,24 +155,9 @@ p {
     background-image: url("../images/computer-1.avif");
 }
 
-#project-2 {
+#project-small {
     flex: 1 0 35%;
     background-image: url("../images/computer-2.avif");
-}
-
-#project-3 {
-    flex: 1 0 35%;
-    background-image: url("../images/computer-3.avif");
-}
-
-#project-4 {
-    flex: 1 0 35%;
-    background-image: url("../images/computer-4.avif");
-}
-
-#project-5 {
-    flex: 1 0 35%;
-    background-image: url("../images/computer-5.avif");
 }
 
 #project-1:hover {
@@ -181,25 +166,7 @@ p {
     transition: filter 0.25s ease;
 }
 
-#project-2:hover {
-    border: solid #f0f5dc;
-    filter: brightness(100%);
-    transition: filter 0.25s ease;
-}
-
-#project-3:hover {
-    border: solid #f0f5dc;
-    filter: brightness(100%);
-    transition: filter 0.25s ease;
-}
-
-#project-4:hover {
-    border: solid #f0f5dc;
-    filter: brightness(100%);
-    transition: filter 0.25s ease;
-}
-
-#project-5:hover {
+#project-small:hover {
     border: solid #f0f5dc;
     filter: brightness(100%);
     transition: filter 0.25s ease;
