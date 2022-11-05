@@ -116,7 +116,7 @@ p {
 
 #about-me-body{
     padding: 0 0 0 30px;
-    width: 75%;
+    width: 65%;
     height: 100%;
     font-size: 18px;
     border-left: solid #344e41;
@@ -146,7 +146,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     padding: 0 0 0 30px;
-    width: 75%;
+    width: 65%;
     height: 100%;
     font-size: 18px;
     border-left: solid #344e41;
@@ -251,7 +251,7 @@ p {
     display: flex;
     justify-content: end;
     padding: 0 0 0 30px;
-    width: 75%;
+    width: 65%;
     height: 100%;
     font-size: 18px;
     border-left: solid #344e41;
