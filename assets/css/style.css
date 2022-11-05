@@ -94,8 +94,9 @@ p {
     top: 120px;
 }
 
-/* Main section: About Me */
-.about-me {
+
+/* consolidate code for main sections (about me, work, and contact me) */
+.section-main {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
@@ -103,7 +104,8 @@ p {
     color: #344e41;
 }
 
-#about-me-title {
+/* consolidate code for the title sections on the left side of index.html */
+.section-title {
     display: flex;
     justify-content: end;
     align-items: top;
@@ -111,38 +113,10 @@ p {
     height: 100%;
     padding: 0 10px 0 100px;
     font-size: 32px;
-    box-sizing: border-box;
 }
 
-#about-me-body{
-    padding: 0 0 0 30px;
-    width: 65%;
-    height: 100%;
-    font-size: 18px;
-    border-left: solid #344e41;
-}
-
-/* Main section: Work */
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 0;
-    height: 100%;
-    color: #344e41;
-    
-}
-
-#work-title {
-    display: flex;
-    justify-content: end;
-    align-items: top;
-    width: 25%;
-    padding: 0 10px 0 100px;
-    font-size: 32px;
-    box-sizing: border-box;
-}
-
-#work-body {
+/* consolidate code for body sections */
+.section-body{
     display: flex;
     flex-wrap: wrap;
     padding: 0 0 0 30px;
@@ -151,7 +125,10 @@ p {
     font-size: 18px;
     border-left: solid #344e41;
 }
-.work header {
+
+/* work section: */
+
+.section-body header {
     width: 100%;
     padding: 0 0 0 20px;
     background-color: #344e41;
@@ -171,7 +148,7 @@ p {
     background-position: center; 
     filter: brightness(70%);
 }
-
+/* work section: project images */
 #project-1 {
     flex: 1 0 90%;
     height: 400px;
@@ -179,22 +156,22 @@ p {
 }
 
 #project-2 {
-    flex: 1 0 40%;
+    flex: 1 0 35%;
     background-image: url("../images/computer-2.avif");
 }
 
 #project-3 {
-    flex: 1 0 40%;
+    flex: 1 0 35%;
     background-image: url("../images/computer-3.avif");
 }
 
 #project-4 {
-    flex: 1 0 40%;
+    flex: 1 0 35%;
     background-image: url("../images/computer-4.avif");
 }
 
 #project-5 {
-    flex: 1 0 40%;
+    flex: 1 0 35%;
     background-image: url("../images/computer-5.avif");
 }
 
@@ -227,43 +204,24 @@ p {
     filter: brightness(100%);
     transition: filter 0.25s ease;
 }
-/* Main section: Contact Me*/
-.contact-me {
+
+/* contact me section: format for text*/
+
+#section-body-contact-me{
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 0;
-    height: 100%;
-}
-
-#contact-me-title {
-    display: flex;
-    justify-content: end;
-    align-items: top;
-    width: 25%;
-    height: 100%;
-    padding: 0 10px 0 100px;
-    font-size: 32px;
-    box-sizing: border-box;
-    color: #344e41;
-}
-
-#contact-me-body {
-    display: flex;
-    justify-content: end;
-    padding: 0 0 0 30px;
+    justify-content: space-evenly;
     width: 65%;
-    height: 100%;
-    font-size: 18px;
     border-left: solid #344e41;
 }
 
-#contact-me-body ul li {
+#section-body ul li {
     list-style-type: none;
     display: inline;
     margin-left: 25px;
 }
 
-#contact-me-body a {
+#section-body a {
     color:  #344e41;
     font-size: 22px;
     text-decoration: underline;
@@ -272,7 +230,7 @@ p {
 /* media query */
 
 @media screen and (max-width:768px) {
-    .project {
+    .section-body {
         width: 100%;
     }
 }
