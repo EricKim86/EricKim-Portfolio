@@ -51,6 +51,12 @@ p {
     text-decoration: underline;
 }
 
+/* emphasize links by increasing font size slightly */
+
+.nav a:hover {
+    font-size: 24px;
+}
+
 /* Background Image with profile picture and quote */
 
 .hero {
@@ -83,7 +89,7 @@ p {
     color: white;
     font-weight: bold;
     font-size: 32px;
-    left: 990px;
+    left: 1030px;
     top: 120px;
 }
 
@@ -154,7 +160,6 @@ p {
 }
 
 .project {
-    flex: 1 1 200px;
     padding: 10px;
     margin: 10px;
     height: 200px;
@@ -163,28 +168,64 @@ p {
     border-width: 1px;
     background-size: cover;
     background-position: center; 
+    filter: brightness(70%);
 }
 
 #project-1 {
+    flex: 1 0 90%;
+    height: 400px;
     background-image: url("../images/computer-1.avif");
 }
 
 #project-2 {
+    flex: 1 0 40%;
     background-image: url("../images/computer-2.avif");
 }
 
 #project-3 {
+    flex: 1 0 40%;
     background-image: url("../images/computer-3.avif");
 }
 
 #project-4 {
+    flex: 1 0 40%;
     background-image: url("../images/computer-4.avif");
 }
 
 #project-5 {
+    flex: 1 0 40%;
     background-image: url("../images/computer-5.avif");
 }
 
+#project-1:hover {
+    border: solid #f0f5dc;
+    filter: brightness(100%);
+    transition: filter 0.25s ease;
+}
+
+#project-2:hover {
+    border: solid #f0f5dc;
+    filter: brightness(100%);
+    transition: filter 0.25s ease;
+}
+
+#project-3:hover {
+    border: solid #f0f5dc;
+    filter: brightness(100%);
+    transition: filter 0.25s ease;
+}
+
+#project-4:hover {
+    border: solid #f0f5dc;
+    filter: brightness(100%);
+    transition: filter 0.25s ease;
+}
+
+#project-5:hover {
+    border: solid #f0f5dc;
+    filter: brightness(100%);
+    transition: filter 0.25s ease;
+}
 /* Main section: Contact Me*/
 .contact-me {
     display: flex;
