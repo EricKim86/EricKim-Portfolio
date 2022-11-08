@@ -6,7 +6,7 @@ This project is a demonstration of the application of numerous HTML and CSS topi
 
 ## Installation
 
-This application can be accessed by opening the index.html file that is located in the respository on a web browser.
+This application can be accessed by opening the index.html file that is located in the respository on a web browser or clicking on: https://erickim86.github.io/erickim-portfolio/
 
 ## Usage
 
